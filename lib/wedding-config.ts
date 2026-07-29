@@ -54,7 +54,7 @@ export const weddingConfig = {
     description:
       "2026 жылғы 26 қыркүйекте өтетін Бекжан мен Гүлзаданың үйлену тойына шақырамыз.",
 
-    siteUrl: "https://your-wedding-site.vercel.app",
+    siteUrl: "https://wedding-invitation-ten-inky.vercel.app/",
   },
 
   music: {
