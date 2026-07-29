@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-cream-100 font-sans text-wedding-text antialiased;
+    background-image: radial-gradient(
+        ellipse at top,
+        rgba(232, 213, 168, 0.15) 0%,
+        transparent 50%
+      ),
+      radial-gradient(
+        ellipse at bottom,
+        rgba(229, 221, 208, 0.2) 0%,
+        transparent 50%
+      );
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    @apply bg-gold-200 text-wedding-text;
+  }
+}
+
+@keyframes petal-fall {
+  0% {
+    transform: translateY(-20px) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(720deg) translateX(80px);
+    opacity: 0;
+  }
+}
+
+.petal {
+  animation: petal-fall linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .petal {
+    animation: none;
+    display: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
