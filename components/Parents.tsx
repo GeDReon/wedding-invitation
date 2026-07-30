@@ -38,7 +38,7 @@ export function Parents() {
             <Heart className="mx-auto mb-4 h-5 w-5 text-gold-400" />
 
             <p className="mb-4 text-xs uppercase tracking-[0.2em] text-wedding-muted">
-              Той иелері
+              Ата-әжесі
             </p>
 
             <p className="font-serif text-xl text-wedding-text">
